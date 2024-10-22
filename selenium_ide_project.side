@@ -1,0 +1,54 @@
+{
+  "id": "0bab225d-5acc-4b37-9f5d-0cd3e39d7ace",
+  "version": "2.0",
+  "name": "selenium_ide_project",
+  "url": "https://www.wikipedia.org",
+  "tests": [{
+    "id": "b27ebf6e-6f3b-400e-8c7f-c4df8d07fd21",
+    "name": "Welcome",
+    "commands": [{
+      "id": "cd0bac7b-7a14-4332-bd92-c62fcb7aa9de",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8e408e7-b1f9-43c8-9ca4-86e88bbacfe7",
+      "comment": "",
+      "command": "click",
+      "target": "css=#js-link-box-en > strong",
+      "targets": [
+        ["css=#js-link-box-en > strong", "css:finder"],
+        ["xpath=//a[@id='js-link-box-en']/strong", "xpath:idRelative"],
+        ["xpath=//a/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'English')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d87dc34-6aed-4d9f-9b4e-31a19052326b",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=Welcome_to_Wikipedia",
+      "targets": [
+        ["id=Welcome_to_Wikipedia", "id"],
+        ["css=#Welcome_to_Wikipedia", "css:finder"],
+        ["xpath=//h1[@id='Welcome_to_Wikipedia']", "xpath:attributes"],
+        ["xpath=//div[@id='mp-welcome']/div/h1", "xpath:idRelative"],
+        ["xpath=//div/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Welcome to Wikipedia')]", "xpath:innerText"]
+      ],
+      "value": "Welcome to Wikipedia"
+    }]
+  }],
+  "suites": [{
+    "id": "27f29d4f-23e9-4211-b0c5-c1f5ab3aa19b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b27ebf6e-6f3b-400e-8c7f-c4df8d07fd21"]
+  }],
+  "urls": ["https://www.wikipedia.org/"],
+  "plugins": []
+}
